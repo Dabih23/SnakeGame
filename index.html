@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <style>
+      .game-board {
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+      }
+      .row {
+        display: flex;
+        width: 100%;
+      }
+      .cell {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      .snake {
+        background-color: green;
+      }
+      .apple {
+        background-color: red;
+        border-radius: 50%;
+      }
+      .score {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      .best-score {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      .restart-button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-board"></div>
+    <div class="score">
+      <span id="score">0</span>
+    </div>
+    <div class="best-score">
+      <span id="best-score"></span>
+    </div>
+    <button class="restart-button">Restart Game</button>
+    <script src="snake.js"></script>
+  </body>
+</html>
